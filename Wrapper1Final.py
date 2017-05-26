@@ -8,7 +8,6 @@ arquivoSemiPronto = arquivo.split('\n')
 #filtrar a lista, removendo todos os itens nulos ('')
 arquivoLista = filter(None, arquivoSemiPronto)
 #loop pra iterar sobre os artigos e tirar a primeira linha com informação desnecessária (se a primeira linha possuir '[', é retirada)
-counter=0
 for x in arquivoLista:
     if '[' in x:
         arquivoLista.remove(x)
